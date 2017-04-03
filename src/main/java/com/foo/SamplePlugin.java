@@ -11,12 +11,12 @@ public class SamplePlugin extends JavaPlugin {
    private final Logger LOGGER = getLogger();
 
    public void onEnable() {
-
+      System.out.println("System out : enabled");
       LOGGER.debug("Sample plugin is now enabled");
    }
 
    public void onDisable() {
-
+      System.out.println("System out : disabled");
       LOGGER.debug("Sample plugin is now disabled");
    }
 }
