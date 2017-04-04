@@ -1,5 +1,6 @@
 package com.foo;
 
+import com.foo.listeners.SensorListener;
 import org.aquapilot.aquabox.api.JavaPlugin;
 import org.slf4j.Logger;
 
@@ -13,6 +14,9 @@ public class SamplePlugin extends JavaPlugin {
    public void onEnable() {
       System.out.println("System out : enabled");
       LOGGER.debug("Sample plugin is now enabled");
+
+      this.getPluginManager().registerEvents(new SensorListener(LOGGER), this);
+
    }
 
    public void onDisable() {
