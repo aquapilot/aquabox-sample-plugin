@@ -1,7 +1,6 @@
 package com.foo.listeners;
 
-import org.aquapilot.aquabox.api.event.SensorValueChangeEvent;
-import org.aquapilot.aquabox.api.event.StateChangedEvent;
+import org.aquapilot.aquabox.api.event.sensor.SensorValueChangeEvent;
 import org.aquapilot.aquabox.api.listener.AquaboxListener;
 import org.aquapilot.aquabox.api.listener.Handler;
 import org.slf4j.Logger;
